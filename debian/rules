@@ -58,8 +58,9 @@ config.status:
 		--with-tcl=/usr/lib/tcl8.6/)
 	touch $@
 
-
-build: build-stamp
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep:
 build-stamp:  config.status
 	dh_testdir
 
@@ -243,4 +244,4 @@ get-orig-source:
 
 
 binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install 
+.PHONY: build clean binary-indep binary-arch binary install build-indep build-arch
