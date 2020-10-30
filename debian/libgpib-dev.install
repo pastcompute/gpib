@@ -1,3 +1,4 @@
 usr/include/*
 usr/lib/libgpib.so
 usr/lib/libgpib.la
+usr/lib/pkgconfig/*.pc

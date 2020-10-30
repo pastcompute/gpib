@@ -162,6 +162,7 @@ install: build
 	cp -a debian/lib debian/tmp
 	#Install the other include file needed (Mention to Frank that it lacks ???)
 	#cp build/include/gpib_user.h debian/tmp/usr/include/gpib
+	cp libgpib.pc debian/tmp/usr/lib/pkgconfig
 
 kdist_clean:
 	dh_clean
